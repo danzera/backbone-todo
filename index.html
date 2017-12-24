@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8">
+    <title>Backbone.js To-Do List</title>
+    <meta name="description" content="">
+</head>
+<body>
+    <!-- div to attach our list of to-do's...to -->
+    <div id="todo"></div>
+    <!-- this script will serve as our HTML template for a to-do item -->
+    <script type="text/template" id="item-template">
+        <div class="view">
+            <input id="todo-complete" type="checkbox" <%= completed ? 'checked="checked"' : '' %> />
+            <label><%= title %></label>
+            <button class="destroy"></button>
+        </div>
+        <input class="edit" value="<%= title %>">
+    </script>
+    <script src="jquery.js"></script>
+    <script src="underscore.js"></script>
+    <script src="backbone.js"></script>
+    <script src="demo.js"></script>
+</body>
+</html>

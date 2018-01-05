@@ -7,11 +7,11 @@
 </head>
 <body>
     <!-- div to attach our list of to-do's...to -->
-    <div id="todo"></div>
+    <div id="to-do"></div>
     <!-- this script will serve as our HTML template for a to-do item -->
     <script type="text/template" id="item-template">
         <div class="view">
-            <input id="todo-complete" type="checkbox" <%= completed ? 'checked="checked"' : '' %> />
+            <input id="to-do-complete" type="checkbox" <%= completed ? 'checked="checked"' : '' %> />
             <label><%= title %></label>
             <button class="destroy"></button>
         </div>
